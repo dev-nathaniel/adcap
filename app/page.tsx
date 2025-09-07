@@ -1,8 +1,11 @@
+import Clicker from "@/components/Clicker";
+import SidebarItem from "@/components/SidebarItem";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <>
+    {/* <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -98,6 +101,60 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+    </div> */}
+    <div>
+      {/* fixed top nav */}
+      <div className="flex justify-between fixed top-0 left-0 w-full p-4">
+        {/* image and networth */}
+        <div>
+          {/* image */}
+          <div></div>
+          {/* networth */}
+          <div>
+            {/* cash networth */}
+            <div>
+              <p>£1.234 quintillion</p>
+            </div>
+            {/* other networth */}
+            <div>
+              {/* gold networth */}
+              <div>
+                <p>50</p>
+              </div>
+              {/* bitcoin networth */}
+              <div>
+                <p>0.02</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* event timer and multiplier button */}
+        <div>
+          {/* multiplier button */}
+          <div>
+            <p>Buy</p>
+            <p>x1</p>
+          </div>
+          {/* event timer */}
+          <div>
+            <p>Event Ends in:</p>
+            <p>2d 16h</p>
+          </div>
+        </div>
+      </div>
+      {/* main clickers */}
+      <div>
+        <Clicker />
+      </div>
+      {/* absolute sidebar */}
+      <div>
+        <SidebarItem itemName="Goals" />
+      </div>
+      {/* absolute auto clicker */}
+      <div></div>
+      {/* fixed bottom bar */}
+      <div></div>
     </div>
+    </>
   );
 }
