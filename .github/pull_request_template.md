@@ -1,7 +1,7 @@
 ## Description
 Please include a summary of the changes and the related issue. 
 
-Fixes JIRA issue: [PROJ-123](https://your-jira-instance/browse/PROJ-123)
+Addresses JIRA ticket: [PROJ-123](https://your-jira-instance/browse/PROJ-123)
 
 ---
 
