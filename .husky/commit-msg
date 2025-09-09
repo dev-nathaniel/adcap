@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -e
+
+COMMIT_REGEX='^[A-Z0-9]+-[0-9]+ .+'
+
+# Commit message being created
+COMMIT_MSG_FILE=$(git rev-parse --git-dir)/COMMIT_EDITMSG
+if [ -f "$COMMIT_MSG_FILE" ]; then
+  COMMIT_MSG=$(head -n1 "$COMMIT_MSG_FILE")
+
+#   echo "🔎 Checking commit message..."
+  if ! [[ "$COMMIT_MSG" =~ $COMMIT_REGEX ]]; then
+    echo "❌ Invalid commit message: $COMMIT_MSG"
+    echo "👉 Must match: ABC-123 some message (prefix can be uppercase alphanumeric)"
+    exit 1
+  fi
+#   echo "✅ Commit message OK: $COMMIT_MSG"
+fi
