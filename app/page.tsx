@@ -104,7 +104,7 @@ export default function Home() {
     </div> */}
     <div>
       {/* fixed top nav */}
-      <div className="flex justify-between fixed top-0 left-0 w-full p-4">
+      <div className="flex justify-between h-20 fixed top-0 left-0 w-full p-4">
         {/* image and networth */}
         <div>
           {/* image */}
@@ -143,7 +143,7 @@ export default function Home() {
         </div>
       </div>
       {/* main clickers */}
-      <div>
+      <div className="pt-24">
         <Clicker />
       </div>
       {/* absolute sidebar */}
@@ -153,7 +153,7 @@ export default function Home() {
       {/* absolute auto clicker */}
       <div></div>
       {/* fixed bottom bar */}
-      <div></div>
+      <div className="fixed bottom-0 w-full p-4 h-20"></div>
     </div>
     </>
   );
